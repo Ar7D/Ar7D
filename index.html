@@ -32,6 +32,91 @@
   <body<%= content_for?(:body_classes) ? raw(" class=\"#{yield(:body_classes)}\"") : '' %>>
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
+/////BEFORE
+<center>
+<h1 style="margin-top: 200px; padding-bottom:20px;">Applicant Search</h1>
+
+<p>Click a button to reveal applicant information.</p>
+
+<div style="display:inline block";>
+<form id="frm1" action="form_action.asp">
+    </form>
+<button onclick="myFunction1()">Mathew Jones</button>
+
+<form id="frm2" action="form_action.asp">
+    </form>
+<button onclick="myFunction2()">Katie Holmes</button>
+
+<form id="frm3" action="form_action.asp">
+    </form>
+<button onclick="myFunction3()">Charlotte Wright</button>
+
+<form id="frm4" action="form_action.asp">
+    </form>
+<button onclick="myFunction4()">James Wilks</button>
+
+<form id="frm5" action="form_action.asp">
+    </form>
+<button onclick="myFunction5()">Sophie Broom</button>
+</div>
+
+<p id="demo"></p>
+
+</center>
+
+<script>
+function myFunction1() {
+    var x = document.forms["frm1"];
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = "name, date of birth, work experience";
+}
+function myFunction2() {
+    var x = document.forms["frm2"];
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = "name, date of birth, work experience and waffles";
+}
+function myFunction3() {
+    var x = document.forms["frm3"];
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = "name, date of birth, work experience and bears";
+}
+function myFunction4() {
+    var x = document.forms["frm4"];
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = "name, date of birth, work experience and sheep";
+}
+function myFunction5() {
+    var x = document.forms["frm5"];
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = "name, date of birth, work experience and mice";
+}
+</script>
+/////AFTER
+
+
+
+
+
     <%= yield :body_start %>
 
     <div id="skiplink-container">
