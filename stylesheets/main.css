@@ -1,7 +1,22 @@
-
-<style>
+  body
+    { }
 
     h1
-    {$home-office}
+    {margin-top: 200px; 
+     padding-bottom:20px;
+    color: #9325B2;
 
-</style>
+}
+
+    p
+    { }
+
+    ol
+    { }
+    
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
